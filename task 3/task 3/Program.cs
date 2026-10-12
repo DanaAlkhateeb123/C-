@@ -11,44 +11,44 @@ namespace task_3
     {
         static void Main(string[] args)
         {
-            //Random random = new Random();
-            //int secretNumber = random.Next(50, 76);
-            //int counter =1;
-            //Console.WriteLine("plz enter a guess");
-            //int guess= Convert.ToInt32(Console.ReadLine());
-            //while (secretNumber != guess)
-            //{
-            //    counter++;
+            Random random = new Random();
+            int secretNumber = random.Next(50, 76);
+            int counter = 1;
+            Console.WriteLine("plz enter a guess");
+            int guess = Convert.ToInt32(Console.ReadLine());
+            while (secretNumber != guess)
+            {
+                counter++;
 
-            //    if (guess > secretNumber)
-            //    {
-            //        Console.WriteLine("Try a lower number.");
-            //    }
-            //    if (guess < secretNumber)
-            //    {
-            //        Console.WriteLine("Try a higher  number.");
-            //    }
-            //    guess = Convert.ToInt32(Console.ReadLine());
-            //}
+                if (guess > secretNumber)
+                {
+                    Console.WriteLine("Try a lower number.");
+                }
+                if (guess < secretNumber)
+                {
+                    Console.WriteLine("Try a higher  number.");
+                }
+                guess = Convert.ToInt32(Console.ReadLine());
+            }
 
-            //if (counter == 1)
-            //{
-            //    Console.WriteLine("you earned 10 points !");
-            //}
-            //if (counter == 2)
-            //{
-            //    Console.WriteLine("you earned 7 points !");
-            //}
-            //if (counter == 3)
-            //{
-            //    Console.WriteLine("you earned 5 points !");
-            //}
-            //if (counter > 3)
-            //{ 
-            //    Console.WriteLine("you earned 0 points !");
-            //}
+            if (counter == 1)
+            {
+                Console.WriteLine("you earned 10 points !");
+            }
+            if (counter == 2)
+            {
+                Console.WriteLine("you earned 7 points !");
+            }
+            if (counter == 3)
+            {
+                Console.WriteLine("you earned 5 points !");
+            }
+            if (counter > 3)
+            {
+                Console.WriteLine("you earned 0 points !");
+            }
 
-            //Console.WriteLine($"attempts =  {counter}");
+            Console.WriteLine($"attempts =  {counter}");
 
 
             int[] stdgrade = { 85, 92, 68, 75, 90 };
